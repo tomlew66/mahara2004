@@ -1,0 +1,26 @@
+Chart.js in Mahara
+==================
+
+Website: http://www.chartjs.org
+Version: 2.9.3
+
+To update:
+- Go to https://github.com/chartjs/Chart.js and choose the
+  latest (non master) branch
+- Download zip file to some local folder and unzip
+- Go to the Chart.js directory and run the following (note you made
+  need to use sudo)
+
+npm install
+npm install -g gulp-cli
+gulp build
+
+This builds the 'dist' folder
+
+copy the LICENSE.md, MAINTAINING.md, and README.md files to htdocs/js/chartjs/ folder
+copy the dist/Chart.min.js to htdocs/js/chartjs/dist/ folder
+copy the dist/Chart.css to the bottom of htdocs/theme/raw/sass/lib/_graph.scss
+
+Changes:
+
+* None
